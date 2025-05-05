@@ -12,6 +12,15 @@
 * Works over WAN/LAN
 * Encrypted communication (TLS with self-signed cert)
 
+ # +--- fender
+    * banner
+    *                                          .|';                    .|'''',                                 '||'''|,           ||                                               
+    *                                           ||               ''     ||                                       ||   ||           ||                                               
+    *  '''|.   '''|.   '''|.  '||  ||`  '''|.  '||'  '||  ||`    ||     ||      '||''|  '''|.  \\  // (''''      ||...|'  '''|.  ''||''       '''|.  .|'', .|'', .|''|, ('''' ('''' 
+    * .|''||  .|''||  .|''||   `|..||  .|''||   ||    ||  ||     ||     ||       ||    .|''||    ><    `'')      || \\   .|''||    ||        .|''||  ||    ||    ||..||  `'')  `'') 
+    * `|..||. `|..||. `|..||.      ||  `|..||. .||.   `|..'|.    ||     `|....' .||.   `|..||. //  \\ `...'     .||  \\. `|..||.   `|..'     `|..||. `|..' `|..' `|...  `...' `...' 
+    *                           ,  |'                            || ....                                    ....                                                             
+    *                             ''                           `..|'       
 # 📦 Dependencies
     sudo apt update && sudo apt install -y git python3 python3-pip openssl build-essential
     pip3 install Flask pyxhook pynput opencv-python cryptography
@@ -24,7 +33,40 @@
 
 # 📁 File Structure
     aaayafuj_Craxs_Rat_access/
+    |__ aaayafuj_terminal.py
     ├── rat_server.py
     ├── rat_client.py
     ├── README.md
     └── aaayafuj_Craxs_Rat_access.sh
+
+
+
+# 📜 Shell Installer: `aaayafuj_Craxs_Rat_access.sh`
+    chmod +x aaayafuj_Craxs_Rat_access.sh
+    ./aaayafuj_Craxs_Rat_access.sh
+    bash ./aaayafuj_Craxs_Rat_access.sh
+    
+`Open Terminal:`
+# 🚀 Upload to GitHub (Manual Steps)
+    cd ~/Desktop
+    mkdir aaayafuj_Craxs_Rat_access && cd aaayafuj_Craxs_Rat_access
+    # Save your files here
+    git init
+    git remote add origin https://github.com/YafetTesfahuney/aaayafuj_Craxs_Rat_access.git
+    git add .
+    git commit -m "Initial commit: aaayafuj_Craxs_Rat_access tool"
+    git branch -M main
+    git push -u origin main
+# 🛡️ Disclaimer for README.md
+    # aaayafuj_Craxs_Rat_access
+
+`This tool is intended **strictly for educational and authorized security testing purposes only**.  
+Unauthorized use is prohibited and may be illegal. The developers take no responsibility for misuse.`
+
+## Features
+* `- Remote Shell`
+* `- File Upload/Download`
+* `- Keystroke Logging`
+* `- Webcam Access`
+* `- Persistence`
+    
