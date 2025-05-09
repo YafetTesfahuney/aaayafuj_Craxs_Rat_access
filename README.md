@@ -21,10 +21,15 @@
     * `|..||. `|..||. `|..||.      ||  `|..||. .||.   `|..'|.    ||     `|....' .||.   `|..||. //  \\ `...'     .||  \\. `|..||.   `|..'     `|..||. `|..' `|..' `|...  `...' `...' 
     *                           ,  |'                            || ....                                    ....                                                             
     *                             ''                           `..|'       
+`Kali Linux `
 # 📦 Dependencies
     sudo apt update && sudo apt install -y git python3 python3-pip openssl build-essential
     pip3 install Flask pyxhook pynput opencv-python cryptography
-
+    
+ `Termux`
+ # 📦 Dependencies
+    pkg update && pkg install -y git python3 python3-pip openssl build-essential
+    pip3 install Flask pyxhook pynput opencv-python cryptography
 * Replace <YOUR_IP> with your public IP or use tools like ngrok for WAN exposure.
 
 # 🔒 Create Self-Signed SSL Cert (Optional for HTTPS)
@@ -36,6 +41,8 @@
     |__ aaayafuj_terminal.py
     ├── rat_server.py
     ├── rat_client.py
+    ├── cert.pem (optional)
+    ├── key.pem (optional)
     ├── README.md
     └── aaayafuj_Craxs_Rat_access.sh
 
